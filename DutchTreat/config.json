@@ -7,5 +7,10 @@
       "DutchTreat": "Information",
       "Microsoft": "Warning"
     }
+  },
+  "Tokens": {
+    "JwtKey": "some odd saying or quote",
+    "Issuer": "localhost",
+    "Audience":  "users"
   }
 }
