@@ -88,7 +88,7 @@ namespace DutchTreat.Controllers
                     var currentUser = await _userManager.FindByNameAsync(User.Identity.Name);
                     newOrder.User = currentUser;
 
-                    _repository.AddEntitty(newOrder);
+                    _repository.AddOrder(newOrder);
                     if (_repository.SaveAll())
                     {
                         return Created($"/api/orders/{newOrder.Id}", _mapper.Map<Order, OrderViewModel>(newOrder));

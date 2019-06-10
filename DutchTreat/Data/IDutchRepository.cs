@@ -14,5 +14,6 @@ namespace DutchTreat.Data
 
         bool SaveAll();
         void AddEntitty(object model);
+        void AddOrder(Order newOrder);
     }
 }
